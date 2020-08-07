@@ -1,5 +1,16 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-export default function Home() {
-  return <h1>hello from home page</h1>;
+import Hero from '../components/Hero'
+
+export default function Home () {
+  return (
+    <>
+      <Hero>
+        <Link to='/products' className='btn btn-primary btn-hero'>
+          our products
+        </Link>
+      </Hero>
+    </>
+  )
 }
